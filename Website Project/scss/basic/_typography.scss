@@ -1,0 +1,18 @@
+.title {
+  font-family: $ff-primary;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.title--blue {
+  color: $primary-color;
+}
+.title--white {
+  color: #ffffff;
+  background: $primary-color;
+}
+.subtitle {
+  font-family: $ff-secondary;
+  font-size: 1.5em;
+  color: $tertiary-color;
+}
+

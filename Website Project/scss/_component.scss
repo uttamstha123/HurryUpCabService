@@ -1,0 +1,27 @@
+.submit__btn {
+  font-family: $ff-secondary;
+}
+.submit__btn--yellow {
+  background: $secondary-color;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  a {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+//  divider between categories
+.wrapper > div {
+  position: relative;
+}
+.divider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  height: 3rem;
+  width: 1px;
+  background-color: $tertiary-color;
+  filter: blur(.1rem);
+}

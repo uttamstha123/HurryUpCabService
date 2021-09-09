@@ -1,0 +1,113 @@
+.booking {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  // gap: 10em;
+  align-items: center;
+  &__hero {
+    max-width: 50rem;
+    img {
+      width: 80%;
+    }
+  }
+
+  &__ui {
+    width: 50rem;
+    max-width: 50%;
+  }
+
+  &__category {
+    max-width: 100%;
+    margin-bottom: 0.8em;
+    border-radius: 1.5rem 1.5rem 0.2rem 0.2rem;
+    @include boxShadow;
+    position: relative;
+
+    .wrapper {
+      height: 8vh;
+      @include flex(_, _, center);
+
+      .title a {
+        color: $primary-color;
+
+        &:active {
+          color: $primary-color;
+        }
+      }
+
+      & > * {
+        flex: 1;
+        line-height: 8vh;
+        text-align: center;
+        cursor: pointer;
+      }
+      .selected {
+        border-bottom: 2px solid $secondary-color;
+        z-index: 10;
+      }
+    }
+  }
+  .container {
+    padding: 2em 1.5em;
+    @include boxShadow;
+    border-radius: 0.2rem 0.2rem 1rem 1rem;
+
+    &__subtitle,
+    .form {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .form__container {
+      @include flex(column, _, _);
+      gap: 1em;
+      .form__group {
+        border-radius: 1rem;
+        overflow: hidden;
+        @include flex(_, _, center);
+        background: #f2f2f2;
+
+        .label {
+          text-align: center;
+          flex: 1;
+          p {
+            font-size: 1.5rem;
+            padding: 1.2em 0.5em;
+          }
+        }
+        .form__input {
+          padding: 1.2em 1em;
+          flex: 2;
+
+          &:last-child {
+            position: relative;
+            span {
+              position: absolute;
+              top: 50%;
+              right: 10%;
+              bottom: 0;
+              transform: translateY(-50%);
+              font-size: 2rem;
+              font-weight: bolder;
+              color: $primary-color;
+            }
+          }
+          input {
+            font-family: $ff-secondary;
+            font-size: 1.4rem;
+
+            &::placeholder {
+              color: $tertiary-color;
+              transform: translateX(3rem);
+            }
+          }
+        }
+      }
+      .submit__btn {
+        padding: 1.2em 0;
+        text-align: center;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+//margin top
+.mo-t--vs {
+  margin-top: 0.5rem;
+}
+.mo-t--s {
+  margin-top: 1.5rem;
+}
+.mo-t--m {
+  margin-top: 3rem;
+}
+.mo-t--l {
+  margin-top: 4.5rem;
+}
+.mo-t--vl {
+  margin-top: 6rem;
+}
+
+// margin bottom
+.mo-b--vs {
+  margin-bottom: 0.5rem;
+}
+.mo-b--s {
+  margin-bottom: 1.5rem;
+}
+.mo-b--m {
+  margin-bottom: 3rem;
+}
+.mo-b--l {
+  margin-bottom: 4.5rem;
+}
+.mo-b--vl {
+  margin-bottom: 6rem;
+}
+
+// margin-top-bottom
+.m--vs {
+  margin: 0.5rem 0;
+}
+.m--s {
+  margin: 1.5rem 0;
+}
+.m--m {
+  margin: 3rem 0;
+}
+.m--l {
+  margin: 4.5rem 0;
+}
+.m--vl {
+  margin: 6rem 0;
+}
+
+// fade-in animation
+.fade-in {
+  animation: fade-in .1s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

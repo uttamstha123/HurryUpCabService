@@ -1,0 +1,377 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font: inherit;
+  background: inherit;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.title--blue {
+  color: #0D324D;
+}
+
+.title--white {
+  color: #ffffff;
+  background: #0D324D;
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  color: #a8a8a8;
+}
+
+.mo-t--vs {
+  margin-top: 0.5rem;
+}
+
+.mo-t--s {
+  margin-top: 1.5rem;
+}
+
+.mo-t--m {
+  margin-top: 3rem;
+}
+
+.mo-t--l {
+  margin-top: 4.5rem;
+}
+
+.mo-t--vl {
+  margin-top: 6rem;
+}
+
+.mo-b--vs {
+  margin-bottom: 0.5rem;
+}
+
+.mo-b--s {
+  margin-bottom: 1.5rem;
+}
+
+.mo-b--m {
+  margin-bottom: 3rem;
+}
+
+.mo-b--l {
+  margin-bottom: 4.5rem;
+}
+
+.mo-b--vl {
+  margin-bottom: 6rem;
+}
+
+.m--vs {
+  margin: 0.5rem 0;
+}
+
+.m--s {
+  margin: 1.5rem 0;
+}
+
+.m--m {
+  margin: 3rem 0;
+}
+
+.m--l {
+  margin: 4.5rem 0;
+}
+
+.m--vl {
+  margin: 6rem 0;
+}
+
+.fade-in {
+  -webkit-animation: fade-in .1s ease forwards;
+          animation: fade-in .1s ease forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.submit__btn {
+  font-family: "Poppins", sans-serif;
+}
+
+.submit__btn--yellow {
+  background: #FFC007;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.submit__btn--yellow a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.wrapper > div {
+  position: relative;
+}
+
+.divider {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  height: 3rem;
+  width: 1px;
+  background-color: #a8a8a8;
+  -webkit-filter: blur(0.1rem);
+          filter: blur(0.1rem);
+}
+
+.booking {
+  min-height: 100vh;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__hero {
+  max-width: 50rem;
+}
+
+.booking__hero img {
+  width: 80%;
+}
+
+.booking__ui {
+  width: 50rem;
+  max-width: 50%;
+}
+
+.booking__category {
+  max-width: 100%;
+  margin-bottom: 0.8em;
+  border-radius: 1.5rem 1.5rem 0.2rem 0.2rem;
+  -webkit-box-shadow: 0 0 1rem rgba(82, 82, 82, 0.15);
+          box-shadow: 0 0 1rem rgba(82, 82, 82, 0.15);
+  position: relative;
+}
+
+.booking__category .wrapper {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__category .wrapper .title a {
+  color: #0D324D;
+}
+
+.booking__category .wrapper .title a:active {
+  color: #0D324D;
+}
+
+.booking__category .wrapper > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 8vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+.booking__category .wrapper .selected {
+  border-bottom: 2px solid #FFC007;
+  z-index: 10;
+}
+
+.booking .container {
+  padding: 2em 1.5em;
+  -webkit-box-shadow: 0 0 1rem rgba(82, 82, 82, 0.15);
+          box-shadow: 0 0 1rem rgba(82, 82, 82, 0.15);
+  border-radius: 0.2rem 0.2rem 1rem 1rem;
+}
+
+.booking .container__subtitle,
+.booking .container .form {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.booking .container .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: _;
+      -ms-flex-align: _;
+          align-items: _;
+  gap: 1em;
+}
+
+.booking .container .form__container .form__group {
+  border-radius: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f2f2f2;
+}
+
+.booking .container .form__container .form__group .label {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.booking .container .form__container .form__group .label p {
+  font-size: 1.5rem;
+  padding: 1.2em 0.5em;
+}
+
+.booking .container .form__container .form__group .form__input {
+  padding: 1.2em 1em;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.booking .container .form__container .form__group .form__input:last-child {
+  position: relative;
+}
+
+.booking .container .form__container .form__group .form__input:last-child span {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #0D324D;
+}
+
+.booking .container .form__container .form__group .form__input input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.booking .container .form__container .form__group .form__input input::-webkit-input-placeholder {
+  color: #a8a8a8;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.booking .container .form__container .form__group .form__input input:-ms-input-placeholder {
+  color: #a8a8a8;
+  transform: translateX(3rem);
+}
+
+.booking .container .form__container .form__group .form__input input::-ms-input-placeholder {
+  color: #a8a8a8;
+  transform: translateX(3rem);
+}
+
+.booking .container .form__container .form__group .form__input input::placeholder {
+  color: #a8a8a8;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.booking .container .form__container .submit__btn {
+  padding: 1.2em 0;
+  text-align: center;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

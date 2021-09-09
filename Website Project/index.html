@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>HurryUpCabs</title>
+  </head>
+  <body>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <main class="booking">
+          <div class="booking__hero">
+            <img src="./img/undraw_My_location_re_r52x.svg" alt="" />
+          </div>
+          <div class="booking__ui">
+            <div class="booking__category">
+              <div class="wrapper">
+                <div class="title title--blue selected">
+                  <a href="./index.html">
+                    <h1 id="daily">Daily</h1>
+                  </a>
+                  <span class="divider">&nbsp;</span>
+                </div>
+                <div class="title title--blue">
+                  <a href="./rental.html">
+                    <h1 id="rental">Rental</h1>
+                  </a>
+                  <span class="divider">&nbsp;</span>
+                </div>
+                <div class="title title--blue">
+                  <a href="./outstation.html">
+                    <h1 id="outstation">Out Station</h1>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="container__subtitle">
+                <p class="subtitle mo-b--s">
+                  Your everyday travel partner AC Cabs for point to point travel
+                </p>
+              </div>
+              <form class="form">
+                <div class="form__container">
+                  <div class="form__group" id="current-location">
+                    <div class="label">
+                      <p class="title title--white">I'm here</p>
+                    </div>
+                    <div class="form__input">
+                      <input
+                        type="text"
+                        class="input"
+                        id="current-location"
+                        placeholder="Current Location"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__group" id="destination">
+                    <div class="label">
+                      <p class="title title--white">Going to</p>
+                    </div>
+                    <div class="form__input">
+                      <input
+                        type="text"
+                        class="input"
+                        id="drop-location"
+                        placeholder="Enter drop location"
+                      />
+                    </div>
+                  </div>
+                  <div class="form__group" id="time">
+                    <div class="label">
+                      <p class="title title--white">When</p>
+                    </div>
+                    <div class="form__input">
+                      <input type="text" onfocus="(this.type = 'datetime-local')" class="input" placeholder="Now" />
+                      <span>&#62;</span>
+                    </div>
+                  </div>
+                  <div class="submit__btn submit__btn--yellow mo-t--s">
+                    <a href="#">Search Cab</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>
